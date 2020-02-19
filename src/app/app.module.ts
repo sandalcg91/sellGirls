@@ -10,7 +10,6 @@ import { ErrorComponent } from './error/error.component';
 import { OffersComponent } from './offers/offers.component';
 import { LoginComponent } from './login/login.component';
 import { HelpComponent } from './help/help.component';
-import { GhantaComponent } from './ghanta/ghanta.component';
 import { SignupComponent } from './signup/signup.component';
 import { LogoutComponent } from './logout/logout.component';
 
@@ -24,7 +23,6 @@ import { LogoutComponent } from './logout/logout.component';
     OffersComponent,
     LoginComponent,
     HelpComponent,
-    GhantaComponent,
     SignupComponent,
     LogoutComponent
   ],
