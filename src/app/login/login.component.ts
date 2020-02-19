@@ -10,16 +10,21 @@ export class LoginComponent implements OnInit {
 
   username = '';
   password = '';
-
-
+  invalidLogin = false;
 
   constructor(private route: Router) { }
 
   ngOnInit() {
   }
-   authenticate(){
-    if (this.username === 'admin' && this.password === 'admin') {
+  authenticate(){
+    if(this.username === 'admin' && this.password === 'admin') {
       this.route.navigate(['body']);
+      this.invalidLogin = false;
+      console.log('T');
+    }
+    else{
+      this.invalidLogin = true;
+      console.log('F');
     }
   }
 }
