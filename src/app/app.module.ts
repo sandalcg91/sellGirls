@@ -12,6 +12,8 @@ import { LoginComponent } from './login/login.component';
 import { HelpComponent } from './help/help.component';
 import { SignupComponent } from './signup/signup.component';
 import { LogoutComponent } from './logout/logout.component';
+import { RedirectMeComponent } from './redirect-me/redirect-me.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -24,12 +26,14 @@ import { LogoutComponent } from './logout/logout.component';
     LoginComponent,
     HelpComponent,
     SignupComponent,
-    LogoutComponent
+    LogoutComponent,
+    RedirectMeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,1 +1,8 @@
 <p>help works!</p>
+
+<div class="container">
+    <button class="btn btn-success" (click)="getMessage()">CALL ME</button>
+</div>
+<div class="container" *ngIf="welcomeMsg">
+    <p>{{welcomeMsg}}</p>
+</div>
